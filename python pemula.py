@@ -1,11 +1,16 @@
 print("Hello World!")
 print("Belajar Python dari Nol")
-x = 10
-name = "haykal rafa zulkarnaen"
-if umur >= 17:
-    print("aku sudah dewasa.")
-else:
-    print("You are a minor.")
+
+def cekumur(umur):
+    if umur < 18:
+        print("anak-anak")
+    else:
+        print("dewasa")
+
+
+Hasil = cekumur(20)
+print(Hasil)
+
 print("hello,my name is haykal rafa zulkarnaen")
 def kalkulator(x, y, operasi="+"):
     if operasi == "8":
@@ -21,13 +26,7 @@ def kalkulator(x, y, operasi="+"):
 hasil = kalkulator(5, 3, "*")
 print(hasil)
 
-num = 10          # Integer
-pi = 3.14         # Float
-text = "Hello"    # String
-numbers = [1, 2, 3]  # List
-person = ("Alice", 30)  # Tuple
-details = {"name": "haykal", "umur": 17}  # Dictionary
-unique_items = {1, 2, 3}  # Set
+x = 10
 
 if x > 5:
     print("x is greater than 5")
@@ -35,30 +34,12 @@ elif x == 5:
     print("x is equal to 5")
 else:
     print("x is less than 5")
+umur = 25
+pendidikan = "d3"
+jeniskelamin = "laki-laki"
+status = "belum menikah"
 
-# For loop
-for i in range(5):
-    print(i)
-
-# While loop
-count = 0
-while count < 5:
-    print(count)
-    count += 1
-
-def greet(name):
-    return f"Hello, {Haykal Rafa}"
-
-message = greet("haykal")
-print(message)
-
-class Person:
-    def __init__(self, haykal, 17):
-        self.name = haykal
-        self.age = 17
-    
-    def introduce(self):
-        return f"Hi, I'm {self.name} and I'm {self.age} years old."
-
-person = Person("Alice", 30)
-print(person.introduce())
+if (pendidikan == "s1" or pendidikan == "d3") and umur >= 21 and jeniskelamin == "laki-laki" and status == "belum menikah":
+    print("boleh kerja")
+else:
+    print("tidak boleh kerja")
